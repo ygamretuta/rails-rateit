@@ -3,17 +3,13 @@ require 'rails'
 module Rateit
   module Generators
     class InstallGenerator < ::Rails::Generators::Base
-      '''
-      desc "This generator installs the jQuery RateIt plugin"
+      source_root File.expand_path('../templates', __FILE__)
 
-      def inject_javascript
-        inject_into_file "app/assets/javascripts/application.js", "//= require jquery.rateit\n", :after => "//= require jquery\n"
+      desc 'copying rateit images'
+      def copying
+        copy_file 'delete.gif', 'app/assets/images/delete.gif'
+        copy_file 'star.gif', 'app/assets/images/star.gif'
       end
-
-      def inject_stylesheet
-        inject_into_file "app/assets/stylesheets/application.css", "*= require rateit\n", :after => "/*\n"
-      end
-      '''
     end
   end
 end
