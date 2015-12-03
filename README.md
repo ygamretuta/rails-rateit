@@ -18,6 +18,10 @@ Or install it yourself as:
 
 ## Usage
 
+Add image assets from gem
+
+    rails g rateit:install
+
 In application.js
 
     //= require jquery.rateit
