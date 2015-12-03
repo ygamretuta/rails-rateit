@@ -7,8 +7,8 @@ module Rateit
 
       desc 'copying rateit images'
       def copying
-        copy_file 'delete.gif', 'app/assets/images/delete.gif'
-        copy_file 'star.gif', 'app/assets/images/star.gif'
+        copy_file 'delete.gif', 'app/assets/images/rateit/delete.gif'
+        copy_file 'star.gif', 'app/assets/images/rateitstar.gif'
       end
     end
   end
