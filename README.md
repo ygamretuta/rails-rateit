@@ -6,7 +6,7 @@ Rails wrapper for the jQuery RateIt plugin
 
 Add this line to your application's Gemfile:
 
-    gem 'rails-rateit'
+    gem 'rails-rateit', github: 'ygamretuta/rails-rateit'
 
 And then execute:
 
