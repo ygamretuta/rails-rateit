@@ -3,7 +3,7 @@ require 'rails'
 module Rateit
   module Generators
     class InstallGenerator < ::Rails::Generators::Base
-
+      '''
       desc "This generator installs the jQuery RateIt plugin"
 
       def inject_javascript
@@ -13,6 +13,7 @@ module Rateit
       def inject_stylesheet
         inject_into_file "app/assets/stylesheets/application.css", "*= require rateit\n", :after => "/*\n"
       end
+      '''
     end
   end
 end

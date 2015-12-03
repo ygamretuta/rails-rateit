@@ -18,9 +18,13 @@ Or install it yourself as:
 
 ## Usage
 
-Add the javascript and stylesheets :
+In application.js
 
-    $ rails generate rateit:install
+    //= require jquery.rateit
+
+In application.
+
+    *= require rateit
 
 In you view, use the rateit_tag helper :
 
